@@ -1,0 +1,22 @@
+{
+  "name": "assignment3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "showdown": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/showdown": "^1.9.2",
+    "less": "^3.9.0",
+    "parcel-bundler": "^1.11.0",
+    "prettier": "^1.15.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/index.html"
+  },
+  "author": "Benjamin Brecher",
+  "license": "ISC",
+  "description": ""
+}
