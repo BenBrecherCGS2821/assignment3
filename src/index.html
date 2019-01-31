@@ -3,7 +3,7 @@
   <head>
     <!-- 
       Name: Benjamin Brecher
-      Date: January 23, 2019    
+      Date: January 30, 2019    
     -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="keywords" content="parcel,web development,nodejs,typescript,less" />
@@ -12,19 +12,19 @@
 
     <title>Modern Web Development With Parcel Bundler, TypeScript, and LESS</title>
 
-    <link rel="stylesheet" href="style.less" />
+    <!--
+      Upon including LESS script, stylesheet/less is parsed into CSS then loaded.
+      It's technically still valid HTML regardless, even without LESS, but it won't the file properly.
+    -->
+    <link rel="stylesheet" href="css/style.less" />
+    <!--<script src="js/less.min.js"></script>-->
     <link href="https://fonts.googleapis.com/css?family=Roboto|ZCOOL+QingKe+HuangYou" rel="stylesheet" />
+    <script src="js/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="></script>
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"
+      src="js/bootstrap.bundle.min.js"
       integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP"
-      crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
   </head>
 
   <body>
@@ -36,9 +36,9 @@
 
         <div class="collapse navbar-collapse" id="navItems">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-itm actvie"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-itm"><a class="nav-link" href="#">Placeholder</a></li>
-            <li class="nav-itm"><a class="nav-link" href="#">Placeholder</a></li>
+            <li class="nav-itm active"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-itm"><a class="nav-link" href="media.html">Media</a></li>
+            <li class="nav-itm"><a class="nav-link" href="author.html">Author</a></li>
           </ul>
         </div>
 
@@ -66,6 +66,10 @@
         TypeScript allows you to use an IDE with JavaScript and have static type information for your environment. This
         makes your code self-documenting and allows you to much quicker find and fix bugs, and make less bugs from the
         start. In order to use TypeScript, it first must be compiled by the TypeScript compiler.
+
+        <br />
+
+        <img src="img/typescript_snippet.png" />
       </p>
       <h2>LESS</h2>
       <p>
@@ -73,6 +77,10 @@
         very simple, and existing CSS is actually fully correct LESS. LESS Simply adds more features. You cannot
         actually use LESS directly in HTML. You have to run it through the LESS preprocessor first in order to get valid
         CSS which can be used in HTML.
+
+        <br />
+        <img src="img/compilation.png" alt="LESS Compilation to CSS" />
+        <!-- Created by making my own image and combining a licensed image to it. -->
       </p>
       <h2>Parcel Bundler</h2>
       <p>
@@ -115,27 +123,51 @@
     <div class="references container">
       <h2>References</h2>
 
-      <h3>Title: Getting Started | LESS.js</h3>
+      <h3>
+        Title:
+        <a href="http://lesscss.org/" target="_blank">Getting Started | LESS.js</a>
+      </h3>
       <ul>
         <li>Author: LESS Contributors</li>
-        <li><a href="http://lesscss.org/">LESS Official Project Page</a></li>
       </ul>
 
-      <h3>Title: Parcel</h3>
+      <h3>
+        Title:
+        <a href="https://parceljs.org/" target="_blank">Parcel</a>
+      </h3>
       <ul>
         <li>Author: Parcel Contributors</li>
-        <li><a href="https://parceljs.org/">Parcel Official Project Page</a></li>
       </ul>
 
-      <h3>Title: TypeScript - JavaScript that Scales</h3>
+      <h3>
+        Title:
+        <a href="https://www.typescriptlang.org/" target="_blank">TypeScript - JavaScript that Scales</a>
+      </h3>
       <ul>
         <li>Author: Microsoft & TypeScript Contributors</li>
-        <li><a href="https://www.typescriptlang.org/">TypeScript Official Homepage.</a></li>
       </ul>
     </div>
     <hr />
     <div class="footer">
-      <div class="container">&copy; 2019 Benjamin Brecher &lt;bb16n@my.fsu.edu&gt; All Rights Reserved</div>
+      <div class="container">
+        &copy; 2019
+        <a href="mailto:bb16n@my.fsu.edu">Benjamin Brecher &lt;bb16n@my.fsu.edu&gt;</a>
+        All Rights Reserved
+        <br />
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+          <img
+            alt="Creative Commons License"
+            style="border-width:0"
+            src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png"
+          />
+        </a>
+        <br />
+        This work is licensed under a
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+          Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
+        </a>
+        .
+      </div>
     </div>
   </body>
 </html>

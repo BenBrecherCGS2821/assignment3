@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 
+      Name: Benjamin Brecher
+      Date: January 30, 2019    
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="keywords" content="parcel,web development,nodejs,typescript,less" />
+    <meta name="description" content="Learn how to develop modern web applications with parcel-bundler" />
+    <meta name="author" content="Benjamin Brecher" />
+
+    <title>Modern Web Development - Media</title>
+
+    <!--
+              Upon including LESS script, stylesheet/less is parsed into CSS then loaded.
+              It's technically still valid HTML regardless, even without LESS, but it won't the file properly.
+    -->
+    <link rel="stylesheet/less" href="css/style.less" />
+    <script src="js/less.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|ZCOOL+QingKe+HuangYou" rel="stylesheet" />
+    <script src="js/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="></script>
+    <script
+      src="js/bootstrap.bundle.min.js"
+      integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP"
+    ></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-toggleable-sm" role="navigation">
+        <a class="navbar-brand" href="index.html">Assignment 3</a>
+
+        <div style="width: 100px"></div>
+
+        <div class="collapse navbar-collapse" id="navItems">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-itm"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-itm active"><a class="nav-link" href="media.html">Media</a></li>
+            <li class="nav-itm"><a class="nav-link" href="author.html">Author</a></li>
+          </ul>
+        </div>
+
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navItems"
+          aria-controls="navItems"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </header>
+    <div class="content container">
+      <h2>Media</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/ahCwqrYpIuM"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="display: block; margin: auto;"
+      ></iframe>
+    </div>
+    <hr />
+    <div class="footer">
+      <div class="container">
+        &copy; 2019
+        <a href="mailto:bb16n@my.fsu.edu">Benjamin Brecher &lt;bb16n@my.fsu.edu&gt;</a>
+        All Rights Reserved
+        <br />
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+          <img
+            alt="Creative Commons License"
+            style="border-width:0"
+            src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png"
+          />
+        </a>
+        <br />
+        This work is licensed under a
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+          Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
+        </a>
+        .
+      </div>
+    </div>
+  </body>
+</html>
