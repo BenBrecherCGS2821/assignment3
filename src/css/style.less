@@ -1,3 +1,4 @@
+/* font types */
 #fonts() {
   .display {
     font-family: "ZCOOL QingKe HuangYou", cursive;
@@ -7,6 +8,24 @@
   }
 }
 
+/* Theme colors. */
+#theme() {
+  .colors(footer) {
+    background-color: #343a40;
+    color: #fff;
+  }
+
+  .colors(body) {
+    background-color: #6b7886 !important;
+  }
+
+  .colors(content) {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+/* remove those pesky margins and make page full screen */
 html,
 body {
   width: 100%;
@@ -14,6 +33,11 @@ body {
   margin: 0;
 }
 
+.header {
+  border-bottom: rgba(255, 255, 255, 0.5) 1px solid !important;
+}
+
+/* container that all content should go into. */
 .container {
   min-width: 50%;
   width: 700px;
@@ -27,8 +51,9 @@ hr {
 }
 
 .content {
-  background-color: rgb(235, 242, 255);
+  #theme.colors(content);
   padding-top: 1px;
+  margin-top: 20px;
 }
 
 body {
@@ -39,6 +64,8 @@ body {
   }
 
   #fonts > .content();
+
+  #theme.colors(body);
 
   p {
     img {
@@ -53,6 +80,7 @@ h2 {
   font-style: italic;
   font-weight: 100;
   font-size: 25px !important;
+  line-height: 35px !important;
 }
 
 .center {
@@ -72,7 +100,8 @@ h2 {
 
 .footer {
   padding: 10px 0px;
-  background-color: #aeaeae;
+  border-top: rgba(255, 255, 255, 0.5) 1px solid;
+  #theme.colors(footer);
 }
 
 table {
@@ -80,7 +109,11 @@ table {
   margin: 0 auto;
   tr {
     padding: 5px;
+    td + td {
+      border-left: rgb(224, 224, 224) 1px solid;
+    }
   }
+
   th,
   td {
     padding: 10px 10px;
@@ -95,11 +128,11 @@ table {
   }
 
   th {
-    border: 1px solid gray;
+    border: none;
     border-bottom: 1px solid black;
   }
 
   td {
-    border: 1px solid gray;
+    border: none;
   }
 }
