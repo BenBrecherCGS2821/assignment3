@@ -19,17 +19,16 @@
     <link rel="stylesheet" href="css/style.less" />
     <!--<script src="js/less.min.js"></script>-->
     <link href="https://fonts.googleapis.com/css?family=Roboto|ZCOOL+QingKe+HuangYou" rel="stylesheet" />
-    <script src="js/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="></script>
-    <script
-      src="js/bootstrap.bundle.min.js"
-      integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP"
-    ></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <script src="js/scroll_position.js"></script>
   </head>
 
   <body>
     <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-toggleable-sm" role="navigation">
+      <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark navbar-toggleable-sm" role="navigation">
         <a class="navbar-brand" href="#">Assignment 3</a>
 
         <div style="width: 100px"></div>
@@ -55,98 +54,106 @@
         </button>
       </nav>
     </header>
-    <div class="content container">
-      <h1>Modern Web Development With Parcel Bundler, TypeScript, and LESS</h1>
-      <p>
-        By using a modern web development front-end stack, you can dramatically speed up your design and implementation.
-        In this article, you will learn how to set up a NodeJS, how to use parcel, TypeScript and LESS.
-      </p>
-      <h2>TypeScript</h2>
-      <p>
-        TypeScript allows you to use an IDE with JavaScript and have static type information for your environment. This
-        makes your code self-documenting and allows you to much quicker find and fix bugs, and make less bugs from the
-        start. In order to use TypeScript, it first must be compiled by the TypeScript compiler.
+    <div class="sidebar">
+      <a class="navbar-brand" href="#" style="color: white; font-size: 24px;">Assignment 3</a>
+      <a href="#typescript" class="internal_link">TypeScript</a>
+      <a href="#less" class="internal_link">LESS</a>
+      <a href="#parcel" class="internal_link">Parcel</a>
+    </div>
+    <div class="wrapper">
+      <div class="content container">
+        <h1>Modern Web Development With Parcel Bundler, TypeScript, and LESS</h1>
+        <p>
+          By using a modern web development front-end stack, you can dramatically speed up your design and
+          implementation. In this article, you will learn how to set up a NodeJS, how to use parcel, TypeScript and
+          LESS.
+        </p>
+        <h2 id="typescript" class="page_section">TypeScript</h2>
+        <p>
+          TypeScript allows you to use an IDE with JavaScript and have static type information for your environment.
+          This makes your code self-documenting and allows you to much quicker find and fix bugs, and make less bugs
+          from the start. In order to use TypeScript, it first must be compiled by the TypeScript compiler.
 
+          <br />
+
+          <img src="img/typescript_snippet.png" />
+        </p>
+        <h2 id="less" class="page_section">LESS</h2>
+        <p>
+          LESS is a preprocessor for CSS that allows you to write styles far quicker and easier than plain CSS. LESS is
+          very simple, and existing CSS is actually fully correct LESS. LESS Simply adds more features. You cannot
+          actually use LESS directly in HTML. You have to run it through the LESS preprocessor first in order to get
+          valid CSS which can be used in HTML.
+          <br />
+          <img src="img/compilation.png" alt="LESS Compilation to CSS" />
+          <!-- Created by making my own image and combining a licensed image to it. -->
+        </p>
+        <h2 id="parcel" class="page_section">Parcel Bundler</h2>
+        <p>
+          Parcel Bundler is where all the magic takes place. It will compile all your TypeScript, LESS and other assets
+          into valid HTML that can be used on any browser. "Parcel has out of the box support for JS, CSS, HTML, file
+          assets, and more - no plugins needed." (ParcelJS)
+        </p>
         <br />
+        <h3 class="center">Which Technologies Are Used To Produce What Type Of Asset</h3>
+        <table>
+          <tr>
+            <th>Techology</th>
+            <th>JavaScript</th>
+            <th>CSS</th>
+            <th>HTML</th>
+          </tr>
+          <tr>
+            <td>LESS</td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>TypeScript</td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Parcel</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+          </tr>
+        </table>
 
-        <img src="img/typescript_snippet.png" />
-      </p>
-      <h2>LESS</h2>
-      <p>
-        LESS is a preprocessor for CSS that allows you to write styles far quicker and easier than plain CSS. LESS is
-        very simple, and existing CSS is actually fully correct LESS. LESS Simply adds more features. You cannot
-        actually use LESS directly in HTML. You have to run it through the LESS preprocessor first in order to get valid
-        CSS which can be used in HTML.
-        <br />
-        <img src="img/compilation.png" alt="LESS Compilation to CSS" />
-        <!-- Created by making my own image and combining a licensed image to it. -->
-      </p>
-      <h2>Parcel Bundler</h2>
-      <p>
-        Parcel Bundler is where all the magic takes place. It will compile all your TypeScript, LESS and other assets
-        into valid HTML that can be used on any browser. "Parcel has out of the box support for JS, CSS, HTML, file
-        assets, and more - no plugins needed." (ParcelJS)
-      </p>
-      <br />
-      <h3 class="center">Which Technologies Are Used To Produce What Type Of Asset</h3>
-      <table>
-        <tr>
-          <th>Techology</th>
-          <th>JavaScript</th>
-          <th>CSS</th>
-          <th>HTML</th>
-        </tr>
-        <tr>
-          <td>LESS</td>
-          <td></td>
-          <td>X</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>TypeScript</td>
-          <td>X</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Parcel</td>
-          <td>X</td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-      </table>
+        <hr />
 
-      <hr />
+        <div class="references page_section" id="references">
+          <h2>References</h2>
 
-      <div class="references">
-        <h2>References</h2>
+          <h3>
+            Title:
+            <a href="http://lesscss.org/" target="_blank">Getting Started | LESS.js</a>
+          </h3>
+          <ul>
+            <li>Author: LESS Contributors</li>
+          </ul>
 
-        <h3>
-          Title:
-          <a href="http://lesscss.org/" target="_blank">Getting Started | LESS.js</a>
-        </h3>
-        <ul>
-          <li>Author: LESS Contributors</li>
-        </ul>
+          <h3>
+            Title:
+            <a href="https://parceljs.org/" target="_blank">Parcel</a>
+          </h3>
+          <ul>
+            <li>Author: Parcel Contributors</li>
+          </ul>
 
-        <h3>
-          Title:
-          <a href="https://parceljs.org/" target="_blank">Parcel</a>
-        </h3>
-        <ul>
-          <li>Author: Parcel Contributors</li>
-        </ul>
-
-        <h3>
-          Title:
-          <a href="https://www.typescriptlang.org/" target="_blank">TypeScript - JavaScript that Scales</a>
-        </h3>
-        <ul>
-          <li>Author: Microsoft & TypeScript Contributors</li>
-        </ul>
+          <h3>
+            Title:
+            <a href="https://www.typescriptlang.org/" target="_blank">TypeScript - JavaScript that Scales</a>
+          </h3>
+          <ul>
+            <li>Author: Microsoft & TypeScript Contributors</li>
+          </ul>
+        </div>
       </div>
     </div>
-    <hr />
     <div class="footer">
       <div class="container">
         &copy; 2019

@@ -19,12 +19,11 @@
     <link rel="stylesheet" href="css/style.less" />
     <!--<script src="js/less.min.js"></script>-->
     <link href="https://fonts.googleapis.com/css?family=Roboto|ZCOOL+QingKe+HuangYou" rel="stylesheet" />
-    <script src="js/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="></script>
-    <script
-      src="js/bootstrap.bundle.min.js"
-      integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP"
-    ></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <script src="js/scroll_position.js"></script>
   </head>
 
   <body>
@@ -55,71 +54,78 @@
         </button>
       </nav>
     </header>
-    <div class="content container">
-      <h2>About the Author</h2>
-      <p>
-        I created this page becasue I'm a computer science major and I work with TypeScript, Parcel and LESS daily for
-        my job. Modern web development with Parcel, TypeScript and LESS has seriously improved my work product and
-        effeciency and made my life far much easier, so I decided to make this webpage as a brief overview of the
-        technologies.
-      </p>
-      <br />
-      <p>
-        I am a computer Science major at Florida State University and CTO of Brecher Trading, LLC
-        <!-- Note: I modified the color curves (slightly increased blue) and conveted it into PNG format.-->
-        <img src="img/me.png" />
-      </p>
-      <hr />
-      <h2>Color Palette</h2>
-      <br />
-      <table>
-        <tr>
-          <th>Color</th>
-          <th>Usage</th>
-          <th>Reason</th>
-        </tr>
-        <tr>
-          <td>#343a40</td>
-          <td>Header/Footer Background Color</td>
-          <td>
-            This is the default color in the bootstrap dark theme. To keep it consistent, I'm using the same color in
-            the footer. I chose the dark theme because it's commonly associated with developer's IDEs. Every experienced
-            developer uses a dark theme becasue it's easier on the eyes, and is default for most IDEs now anyways.
-          </td>
-        </tr>
-        <tr>
-          <td>#ffffff</td>
-          <td>Header/Footer Text & Active Page Link & Content Background</td>
-          <td>
-            White simply has good contrast with dark colors. Note: Navigation links are the same color, but at half
-            opacity.
-          </td>
-        </tr>
-        <tr>
-          <td>#6b7886</td>
-          <td>Body Background</td>
-          <td>
-            I think it looks nice and makes the content easy to focus on. I'm trying something different. Surprisingly
-            it doesnt look that bad, so I'm keeping it (for now). The blue hues complement my picture, in my opinion.
-          </td>
-        </tr>
-        <tr>
-          <td>#000000</td>
-          <td>Text Content</td>
-          <td>Standard black text to create high contrast color.</td>
-        </tr>
-        <tr>
-          <td>rgb(0, 123, 255)</td>
-          <td>Hyperlink to External Page</td>
-          <td>
-            Standard blue link to external page. It's instantly recognizable. Why change it when it looks good already?
-          </td>
-        </tr>
-      </table>
+
+    <div class="sidebar">
+      <a class="navbar-brand" href="#" style="color: white; font-size: 24px;">Assignment 3</a>
+      <a href="#about" class="internal_link">About Me</a>
+      <a href="#palette" class="internal_link">Color Palette</a>
     </div>
-
-    <br />
-
+    <div class="wrapper">
+      <div class="content container">
+        <h2 class="page_section" id="about">About the Author</h2>
+        <p>
+          I created this page becasue I'm a computer science major and I work with TypeScript, Parcel and LESS daily for
+          my job. Modern web development with Parcel, TypeScript and LESS has seriously improved my work product and
+          effeciency and made my life far much easier, so I decided to make this webpage as a brief overview of the
+          technologies.
+        </p>
+        <br />
+        <p>
+          I am a computer Science major at Florida State University and CTO of Brecher Trading, LLC
+          <!-- Note: I modified the color curves (slightly increased blue) and conveted it into PNG format.-->
+          <img src="img/me.png" />
+        </p>
+        <hr />
+        <h2 class="page_section" id="palette">Color Palette</h2>
+        <br />
+        <table>
+          <tr>
+            <th>Color</th>
+            <th>Usage</th>
+            <th>Reason</th>
+          </tr>
+          <tr>
+            <td>#343a40</td>
+            <td>Header/Footer Background Color</td>
+            <td>
+              This is the default color in the bootstrap dark theme. To keep it consistent, I'm using the same color in
+              the footer. I chose the dark theme because it's commonly associated with developer's IDEs. Every
+              experienced developer uses a dark theme becasue it's easier on the eyes, and is default for most IDEs now
+              anyways.
+            </td>
+          </tr>
+          <tr>
+            <td>#ffffff</td>
+            <td>Header/Footer Text & Active Page Link & Content Background</td>
+            <td>
+              White simply has good contrast with dark colors. Note: Navigation links are the same color, but at half
+              opacity.
+            </td>
+          </tr>
+          <tr>
+            <td>#6b7886</td>
+            <td>Body Background</td>
+            <td>
+              I think it looks nice and makes the content easy to focus on. I'm trying something different. Surprisingly
+              it doesnt look that bad, so I'm keeping it (for now). The blue hues complement my picture, in my opinion.
+            </td>
+          </tr>
+          <tr>
+            <td>#000000</td>
+            <td>Text Content</td>
+            <td>Standard black text to create high contrast color.</td>
+          </tr>
+          <tr>
+            <td>rgb(0, 123, 255)</td>
+            <td>Hyperlink to External Page</td>
+            <td>
+              Standard blue link to external page. It's instantly recognizable. Why change it when it looks good
+              already?
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
     <div class="footer">
       <div class="container">
         &copy; 2019
