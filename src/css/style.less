@@ -1,29 +1,4 @@
-/* font types */
-#fonts() {
-  .display {
-    font-family: "ZCOOL QingKe HuangYou", cursive;
-  }
-  .content {
-    font-family: "Roboto", sans-serif;
-  }
-}
-
-/* Theme colors. */
-#theme() {
-  .colors(footer) {
-    background-color: #343a40;
-    color: #fff;
-  }
-
-  .colors(body) {
-    background-color: #6b7886 !important;
-  }
-
-  .colors(content) {
-    background-color: #fff;
-    color: #000;
-  }
-}
+@import "theme.less";
 
 /* remove those pesky margins and make page full screen */
 html,
@@ -31,12 +6,6 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-}
-
-.header {
-  border-bottom: rgba(255, 255, 255, 0.5) 1px solid !important;
-  z-index: 2 !important;
-  //padding-left: 160px;
 }
 
 /* container that all content should go into. */
